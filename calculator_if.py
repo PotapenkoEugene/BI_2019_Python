@@ -1,8 +1,8 @@
 while True:
     try:
-        number_1 = float(input())
-        command = input()
-        number_2 = float(input())
+        number_1=float(input())
+        command =input()
+        number_2 =float(input())
         if command == "*":
             print(number_1 * number_2)
         elif command == "-":
