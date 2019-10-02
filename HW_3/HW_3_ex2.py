@@ -1,5 +1,5 @@
 def flat_list(lst):
-    if type(lst) == str or type(lst) == dict: #work with all iter except str, dict
+    if type(lst) == str or type(lst) == dict:   # work with all iter except str, dict
         return None
     one_dim_list = []
     try:
@@ -9,7 +9,7 @@ def flat_list(lst):
             else:
                 one_dim_list.append(i)
         return one_dim_list
-    except TypeError:   #initial argument must be iter
+    except TypeError:   # initial argument must be iter
         return None
 
 # print(flat_list([{1,2,3},(4,5), 6,77]))
@@ -19,4 +19,3 @@ def flat_list(lst):
 # print(flat_list(1))
 # print(flat_list('ghgsh'))
 # print(flat_list({1:2,3:4,5:6}))
-
