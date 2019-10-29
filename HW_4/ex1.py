@@ -1,6 +1,6 @@
 def checkio(string1, string2):
     word_in_both_string = []
-    string1 = string1.split(',')  # make 2 lists
+    string1 = string1.split(',')  # make 2 lists.
     string2 = string2.split(',')
 
     for word in string1:  # compare words with each other
