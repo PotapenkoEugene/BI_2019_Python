@@ -14,17 +14,17 @@ def create_intervals(set_data):
             nums.append(num)
             continue
 
-        if last_num == num - 1: # if it's next num, add it to nums
+        if last_num == num - 1:  # if it's next num, add it to nums
             nums.append(num)
             last_num = num
-        else:                   # if it's not next num add interval to result
-            result.append((min(nums),max(nums)))
+        else:  # if it's not next num add interval to result
+            result.append((min(nums), max(nums)))
             last_num = num
             nums = [num]
 
-    result.append((min(nums), max(nums))) # add last interval
+    result.append((min(nums), max(nums)))  # add last interval
     return result
 
-#print(create_intervals({1, 2, 3, 4, 5, 7, 8, 12}) == [(1, 5), (7, 8), (12, 12)])
-#print(create_intervals({1, 2, 3, 6, 7, 8, 4, 5}) == [(1, 8)])
-#print(create_intervals({1,'2'}) != [(1,2)])
+# print(create_intervals({1, 2, 3, 4, 5, 7, 8, 12}) == [(1, 5), (7, 8), (12, 12)])
+# print(create_intervals({1, 2, 3, 6, 7, 8, 4, 5}) == [(1, 8)])
+# print(create_intervals({1,'2'}) != [(1,2)])
