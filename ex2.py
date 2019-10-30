@@ -1,5 +1,5 @@
 def group_equal(lst):
-    if len(lst) == 0:  # immediately return the list if it is empty.
+    if len(lst) == 0:  # immediately return the list if it is empty..
         return lst
 
     else:

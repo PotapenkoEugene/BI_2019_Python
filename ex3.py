@@ -9,7 +9,7 @@ def create_intervals(set_data):
     for num in set_data:
 
         if first_cycle:
-            last_num = num  # remember last el for next cycles.
+            last_num = num  # remember last el for next cycles..
             first_cycle = False
             nums.append(num)
             continue
